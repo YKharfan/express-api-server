@@ -2,7 +2,18 @@
 
 ## Getting Started
 
-First, run the development server:
+Make sure to have the environment variables configured:
+
+```bash
+DB_NAME="dbname";
+DB_USER="user";
+DB_PASSWORD="password";
+DB_HOST="localhost";
+DB_DIALECT="mysql";
+DB_PORT="3306";
+```
+
+Run the development server:
 
 ```bash
 npm run dev
