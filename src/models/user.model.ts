@@ -7,6 +7,7 @@ class User extends Model {
   public lastname?: string;
   public email!: string;
   public password!: string;
+  public income?: number;
 }
 
 User.init(
@@ -32,6 +33,10 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    income: {
+      type: DataTypes.DOUBLE,
+      allowNull: true,
     }
   },
   {

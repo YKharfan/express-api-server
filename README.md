@@ -5,12 +5,23 @@
 Make sure to have the environment variables configured:
 
 ```bash
-DB_NAME="dbname";
-DB_USER="user";
-DB_PASSWORD="password";
-DB_HOST="localhost";
-DB_DIALECT="mysql";
-DB_PORT="3306";
+DB_NAME="dbname"
+DB_USER="user"
+DB_PASSWORD="password"
+DB_HOST="localhost"
+DB_DIALECT="mysql"
+DB_PORT="3306"
+JWT_SECRET=random-secret-key
+JWT_EXPIRES_IN=1h
+BASIC_AUTH_USER=admin
+BASIC_AUTH_PASS=supersecret
+PORT=3000
+```
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
 Run the development server:
